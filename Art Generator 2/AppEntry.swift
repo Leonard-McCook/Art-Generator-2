@@ -13,7 +13,12 @@ struct AppEntry: App {
         WindowGroup {
             ContentView()
                 .onAppear {
-                    print(Bundle.main.infoDictionary?["API_KEY"] as? String)
+                    Task {
+                        let sample = GenerationInput(prompt: "A girl with long flowing hair at the beach sitting down in the sunlight anime style" )
+                        if let data = sample.encodedData {
+                            try await APIService().fetchImages(with: data)
+                        }
+                    }
                 }
         }
     }
