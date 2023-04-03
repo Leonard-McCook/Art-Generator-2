@@ -12,6 +12,7 @@
 		D7D1C66629DA4C9500957261 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = D7D1C66529DA4C9500957261 /* Assets.xcassets */; };
 		D7D1C66929DA4C9500957261 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = D7D1C66829DA4C9500957261 /* Preview Assets.xcassets */; };
 		D7D1C67029DA4E7E00957261 /* Launch Screen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D7D1C66F29DA4E7E00957261 /* Launch Screen.storyboard */; };
+		D7D1C67429DA5C8300957261 /* Models.swift in Sources */ = {isa = PBXBuildFile; fileRef = D7D1C67329DA5C8300957261 /* Models.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -23,6 +24,7 @@
 		D7D1C66F29DA4E7E00957261 /* Launch Screen.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = "Launch Screen.storyboard"; sourceTree = "<group>"; };
 		D7D1C67129DA4F8000957261 /* Config.xcconfig */ = {isa = PBXFileReference; lastKnownFileType = text.xcconfig; path = Config.xcconfig; sourceTree = "<group>"; };
 		D7D1C67229DA502600957261 /* Art-Generator-2-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = "Art-Generator-2-Info.plist"; sourceTree = SOURCE_ROOT; };
+		D7D1C67329DA5C8300957261 /* Models.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Models.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -57,6 +59,7 @@
 			children = (
 				D7D1C67229DA502600957261 /* Art-Generator-2-Info.plist */,
 				D7D1C66129DA4C9200957261 /* AppEntry.swift */,
+				D7D1C67329DA5C8300957261 /* Models.swift */,
 				D7D1C66329DA4C9200957261 /* ContentView.swift */,
 				D7D1C66529DA4C9500957261 /* Assets.xcassets */,
 				D7D1C66F29DA4E7E00957261 /* Launch Screen.storyboard */,
@@ -145,6 +148,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				D7D1C67429DA5C8300957261 /* Models.swift in Sources */,
 				D7D1C66429DA4C9200957261 /* ContentView.swift in Sources */,
 				D7D1C66229DA4C9200957261 /* AppEntry.swift in Sources */,
 			);
