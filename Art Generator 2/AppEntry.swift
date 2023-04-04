@@ -11,7 +11,7 @@ import SwiftUI
 struct AppEntry: App {
     var body: some Scene {
         WindowGroup {
-            ContentView()
+            DALLEImagesView()
                 .onAppear {
                     Task {
                         let sample = GenerationInput(prompt: "A girl with long flowing hair at the beach sitting down in the sunlight anime style" )
