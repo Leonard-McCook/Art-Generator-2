@@ -59,14 +59,14 @@
 		D7D1C66029DA4C9200957261 /* Art Generator 2 */ = {
 			isa = PBXGroup;
 			children = (
-				D7D1C67229DA502600957261 /* Art-Generator-2-Info.plist */,
 				D7D1C66129DA4C9200957261 /* AppEntry.swift */,
-				D7D1C67529DB789300957261 /* APIService.swift */,
-				D7D1C67829DCD1A000957261 /* Models */,
 				D7D1C67729DCD18F00957261 /* Screens */,
+				D7D1C67829DCD1A000957261 /* Models */,
+				D7D1C67529DB789300957261 /* APIService.swift */,
+				D7D1C67129DA4F8000957261 /* Config.xcconfig */,
+				D7D1C67229DA502600957261 /* Art-Generator-2-Info.plist */,
 				D7D1C66529DA4C9500957261 /* Assets.xcassets */,
 				D7D1C66F29DA4E7E00957261 /* Launch Screen.storyboard */,
-				D7D1C67129DA4F8000957261 /* Config.xcconfig */,
 				D7D1C66729DA4C9500957261 /* Preview Content */,
 			);
 			path = "Art Generator 2";
@@ -83,7 +83,7 @@
 		D7D1C67729DCD18F00957261 /* Screens */ = {
 			isa = PBXGroup;
 			children = (
-				D7D1C66329DA4C9200957261 /* DALLEImagesView.swift */,
+				D7D1C67929DD2B4D00957261 /* DALLE Images */,
 			);
 			path = Screens;
 			sourceTree = "<group>";
@@ -94,6 +94,14 @@
 				D7D1C67329DA5C8300957261 /* Models.swift */,
 			);
 			path = Models;
+			sourceTree = "<group>";
+		};
+		D7D1C67929DD2B4D00957261 /* DALLE Images */ = {
+			isa = PBXGroup;
+			children = (
+				D7D1C66329DA4C9200957261 /* DALLEImagesView.swift */,
+			);
+			path = "DALLE Images";
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
