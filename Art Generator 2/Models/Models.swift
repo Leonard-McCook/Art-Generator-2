@@ -5,6 +5,8 @@
 //  Created by Leonard McCook-Carr on 4/2/23.
 //
 
+
+
 import SwiftUI
 
 enum Constants {
@@ -24,5 +26,14 @@ struct GenerationInput: Codable {
 
 struct DalleImage: Identifiable {
     var id = UUID()
-    var uiImage: UIImage
+    var uiImage: UIImage?
 }
+
+struct ResponseModel: Codable {
+    struct Data: Codable {
+        let url: URL
+    }
+    let created: Date
+    let data: [Data]
+}
+
