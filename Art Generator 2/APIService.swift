@@ -10,7 +10,8 @@ import Foundation
 class APIService {
     let baseURL = "https://api.openai.com/v1/images/"
     let apiKey = Bundle.main.infoDictionary?["API_KEY"] as? String
-    func fetchImages(with data: Data) async throws {
+    
+    func fetchImages(with data: Data) async throws -> ResponseModel {
         guard let apiKey else { fatalError("Could not get APIKey")}
         guard let url = URL(string: baseURL + "generations") else {
             fatalError("Error: invalid URL")
@@ -24,7 +25,11 @@ class APIService {
         guard (response as? HTTPURLResponse) != nil else {
             fatalError("Error: Data Request error")
         }
-        print(String(decoding: data, as: UTF8.self))
+        do {
+            return try JSONDecoder().decode(ResponseModel.self, from: data)
+        } catch {
+            throw error
+        }
     }
 }
 
