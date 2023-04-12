@@ -14,7 +14,7 @@ class APIService {
     func fetchImages(with data: Data) async throws -> ResponseModel {
         guard let apiKey else { fatalError("Could not get APIKey")}
         guard let url = URL(string: baseURL + "generations") else {
-            fatalError("Error: invalid URL")
+            fatalError("Error: Invalid URL")
         }
         var request = URLRequest(url: url)
         request.httpMethod = "POST"

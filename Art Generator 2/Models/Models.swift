@@ -36,4 +36,3 @@ struct ResponseModel: Codable {
     let created: Date
     let data: [Data]
 }
-

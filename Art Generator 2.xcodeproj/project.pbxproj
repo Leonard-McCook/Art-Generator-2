@@ -8,6 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		D72ADA4329E1937200604A04 /* ViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = D72ADA4229E1937200604A04 /* ViewModel.swift */; };
+		D72ADA4529E7267800604A04 /* Styles.swift in Sources */ = {isa = PBXBuildFile; fileRef = D72ADA4429E7267800604A04 /* Styles.swift */; };
 		D7D1C66229DA4C9200957261 /* AppEntry.swift in Sources */ = {isa = PBXBuildFile; fileRef = D7D1C66129DA4C9200957261 /* AppEntry.swift */; };
 		D7D1C66429DA4C9200957261 /* DALLEImagesView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D7D1C66329DA4C9200957261 /* DALLEImagesView.swift */; };
 		D7D1C66629DA4C9500957261 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = D7D1C66529DA4C9500957261 /* Assets.xcassets */; };
@@ -19,6 +20,7 @@
 
 /* Begin PBXFileReference section */
 		D72ADA4229E1937200604A04 /* ViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewModel.swift; sourceTree = "<group>"; };
+		D72ADA4429E7267800604A04 /* Styles.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Styles.swift; sourceTree = "<group>"; };
 		D7D1C65E29DA4C9200957261 /* Art Generator 2.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Art Generator 2.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		D7D1C66129DA4C9200957261 /* AppEntry.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppEntry.swift; sourceTree = "<group>"; };
 		D7D1C66329DA4C9200957261 /* DALLEImagesView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DALLEImagesView.swift; sourceTree = "<group>"; };
@@ -94,6 +96,7 @@
 			isa = PBXGroup;
 			children = (
 				D7D1C67329DA5C8300957261 /* Models.swift */,
+				D72ADA4429E7267800604A04 /* Styles.swift */,
 			);
 			path = Models;
 			sourceTree = "<group>";
@@ -181,6 +184,7 @@
 				D72ADA4329E1937200604A04 /* ViewModel.swift in Sources */,
 				D7D1C67429DA5C8300957261 /* Models.swift in Sources */,
 				D7D1C66429DA4C9200957261 /* DALLEImagesView.swift in Sources */,
+				D72ADA4529E7267800604A04 /* Styles.swift in Sources */,
 				D7D1C67629DB789300957261 /* APIService.swift in Sources */,
 				D7D1C66229DA4C9200957261 /* AppEntry.swift in Sources */,
 			);
