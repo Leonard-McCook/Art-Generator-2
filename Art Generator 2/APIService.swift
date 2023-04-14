@@ -45,5 +45,19 @@ class APIService {
             return nil
         }
     }
+    
+    func getVariations(formDataField: [String : Any],
+                       fieldName: String,
+                       fileName: String,
+                       fileData: Data) async throws -> ResponseModel {
+        guard let apiKey else { fatalError("Could not get APIKey")}
+        guard let url = URL(string: baseURL + "variations") else {
+            fatalError("Error: Invalid URL")
+        }
+        var request = URLRequest(url: url)
+        request.httpMethod = "POST"
+        request.addValue(apiKey, forHTTPHeaderField: "Authorization")
+        let boundary = UUID().uuidString
+        request.setValue("multipart/form-data: boundary=\(boundary)", forHTTPHeaderField: "Content-Type")
+    }
 }
-
