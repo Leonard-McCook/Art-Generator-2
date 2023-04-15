@@ -41,8 +41,8 @@ struct DALLEImagesView: View {
                             .frame(width: 256, height: 256)
                     }
                     if vm.urls.isEmpty {
-                        Text("The more descriptive you can be, the better")
-                        TextField("Image Description....",
+                        Text("The more descriptive you are, the better")
+                        TextField("Image Description...",
                                   text: $vm.prompt,
                                   axis: .vertical)
                         .textFieldStyle(.roundedBorder)
