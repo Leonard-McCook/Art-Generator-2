@@ -104,6 +104,19 @@ struct DALLEImagesView: View {
             }
             .navigationTitle("Art Generator")
             .edgesIgnoringSafeArea(.bottom)
+            .toolbar {
+                if let selectedImage = vm.selectedImage {
+                    ToolbarItem {
+                        ShareLink(item: Image(uiImage: selectedImage),
+                                  subject: Text("Generated Image"),
+                                  message: Text(vm.description),
+                                  preview: SharePreview(Text("Generated Image"),
+                                     image: Image(uiImage: selectedImage)))
+                                  
+                                             
+                    }
+                }
+            }
         }
     }
 }
