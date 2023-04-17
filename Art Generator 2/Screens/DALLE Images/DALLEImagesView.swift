@@ -95,7 +95,9 @@ struct DALLEImagesView: View {
                         .buttonStyle(.borderedProminent)
                     }
                 } else {
-                    ProgressView()
+                    Spacer()
+                    FetchingView()
+                    Spacer()
                 }
                 if vm.selectedImage == nil && !vm.urls.isEmpty {
                     Image("Artist")
@@ -111,9 +113,7 @@ struct DALLEImagesView: View {
                                   subject: Text("Generated Image"),
                                   message: Text(vm.description),
                                   preview: SharePreview(Text("Generated Image"),
-                                     image: Image(uiImage: selectedImage)))
-                                  
-                                             
+                                        image: Image(uiImage: selectedImage)))
                     }
                 }
             }
