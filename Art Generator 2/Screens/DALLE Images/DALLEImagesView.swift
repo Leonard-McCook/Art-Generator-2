@@ -45,6 +45,7 @@ struct DALLEImagesView: View {
                         TextField("Image Description...",
                                   text: $vm.prompt,
                                   axis: .vertical)
+                        .showClearButton($vm.prompt)
                         .textFieldStyle(.roundedBorder)
                         .padding(.horizontal)
                         Form {
