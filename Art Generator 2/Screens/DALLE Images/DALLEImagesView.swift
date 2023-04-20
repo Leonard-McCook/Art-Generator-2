@@ -118,6 +118,11 @@ struct DALLEImagesView: View {
                     }
                 }
             }
+            .alert("Processing Error", isPresented: $vm.showAlert) {
+                Button("Ok") {}
+            } message: {
+                Text("Unable to process this request. Your image descriptioncannot be interpreted.")
+            }
         }
     }
 }
