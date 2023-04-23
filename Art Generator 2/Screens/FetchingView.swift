@@ -18,7 +18,6 @@ struct FetchingView: View {
                 .animation(Animation.linear
                     .speed(0.2)
                     .repeatForever(autoreverses: false), value: rotation)
-                
         }
         .onAppear {
             rotation = 360

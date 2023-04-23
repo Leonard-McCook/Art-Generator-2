@@ -29,7 +29,7 @@ struct TextFieldClearButton: ViewModifier {
     }
 }
 
-extension View  {
+extension View {
     func showClearButton(_ text: Binding<String>) -> some View {
         self.modifier(TextFieldClearButton(fieldText: text))
     }

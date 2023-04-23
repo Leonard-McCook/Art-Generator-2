@@ -7,7 +7,6 @@
 
 import Foundation
 
-
 enum ImageStyle: String, CaseIterable {
     case none
     case abstract = "abstract"
@@ -19,7 +18,6 @@ enum ImageStyle: String, CaseIterable {
     case realism
     case renaissance
     case surrealism
-    case anime
     
     var description: String {
         self != .none ? "an image in the style of " + self.rawValue + " " : ""
