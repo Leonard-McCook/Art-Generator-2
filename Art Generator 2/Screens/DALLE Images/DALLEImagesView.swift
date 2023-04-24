@@ -77,11 +77,11 @@ struct DALLEImagesView: View {
                             .padding()
                         HStack {
                             if vm.selectedImage != nil {
-                                Button("Get Variation") {
+                                Button("Get Variations") {
                                     vm.fetchVariations()
                                 }
                             }
-                            Button("Try another") {
+                            Button("Try a different one") {
                                 vm.reset()
                             }
                         }
