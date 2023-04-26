@@ -18,6 +18,7 @@ enum ImageStyle: String, CaseIterable {
     case realism
     case renaissance
     case surrealism
+    case mosaic
     
     var description: String {
         self != .none ? "an image in the style of " + self.rawValue + " " : ""
