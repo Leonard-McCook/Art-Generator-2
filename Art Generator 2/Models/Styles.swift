@@ -49,6 +49,7 @@ enum Artist: String, CaseIterable {
     case pollock = "Jackson Pollock"
     case vangogh = "Vincent van Gogh"
     case warhol = "Andy Warhol"
+    case kandinsky = "Wassily Kandinsky"
     
     var description: String {
         self != .none ? "similar to the works of " + self.rawValue + " " : ""
